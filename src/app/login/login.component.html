@@ -1,0 +1,22 @@
+<div class="container text-center">
+  <h1>¡Bienvenido!</h1>
+  <p>Cononoce tus proyectos</p>
+  <div class="row text-left">
+    <div class="col-md-6 col-12 text-right">
+      <img src="../assets/images/everis4_clientes.gif" class="img-fluid img-thumbnail" alt="">
+    </div>
+    <div class="offset-md-1 col-md-4 col-xs-12 ">
+      <div class="form-group breadcrumb">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" [(ngModel)]="loginParams.email">
+        <br/>
+        <label for="password">Contraseña</label>
+        <input type="password" class="form-control" [(ngModel)]="loginParams.password">
+      </div>
+      <br/>
+      <button class="btn btn-block" style="background-color: #459a4f;"  (click)="login()"> Ingresar </button>
+      <br/>
+      <button class="btn btn-block" style="background-color: #f6f6f6;"> Cancelar </button>
+    </div>
+  </div>
+</div>
