@@ -14,6 +14,7 @@ import {ProjectRegisterComponent} from './projectRegister/projectRegister.compon
 import {ProjectsComponent} from './projects/projects.component';
 import {RegisterMembersComponent} from './registerMembers/registerMembers.component'
 import { ProjectsService } from './services/projects.service';
+import { MembersService } from './services/members.service';
 
 const appRoutes : Routes =[
   {path:'', component:LoginComponent},
@@ -49,7 +50,7 @@ export const firebaseConfig = {
     AngularFireDatabaseModule,
     AngularFireAuthModule,
   ],
-  providers: [ProjectsService,AutorizacionService],
+  providers: [ProjectsService,AutorizacionService,MembersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

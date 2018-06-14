@@ -4,22 +4,22 @@
   <div class="row text-left ">
     <div class="col-xs-12 offset-md-3 col-md-6 breadcrumb">
       <label for="">Número de empleado</label>
-      <input type="text" class="form-control">
+      <input type="text" class="form-control" [(ngModel)]="member.numero">
       <br>
       <label for="">Nombre</label>
-      <input type="text" class="form-control">
+      <input type="text" class="form-control" [(ngModel)]="member.nombre">
       <br>
       <label for="">Apellido</label>
-      <input type="text" class="form-control">
+      <input type="text" class="form-control"  [(ngModel)]="member.apellido">
       <br>
       <label for="">Email</label>
-      <input type="email" class="form-control">
+      <input type="email" class="form-control"  [(ngModel)]="member.email">
       <br>
       <label for="">Teléfono</label>
-      <input type="number" class="form-control">
+      <input type="text" class="form-control"  [(ngModel)]="member.telefono">
       <br>
       <label for="">Password</label>
-      <input type="password" class="form-control margin">
+      <input type="password" class="form-control margin"  [(ngModel)]="member.password">
       <a class="btn btn-primary" (click)="saveMember()">Enviar</a>
       <a class="btn btn-default">Cancelar</a>
     </div>

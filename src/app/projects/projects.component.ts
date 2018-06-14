@@ -9,12 +9,12 @@ import { ProjectsService } from '../services/projects.service';
 export class ProjectsComponent {
   id = null;
   project: any = {};
-  constructor(private route: ActivatedRoute, private projectsService:ProjectsService) {
+  constructor(private route: ActivatedRoute, private projectsService: ProjectsService) {
     this.id = this.route.snapshot.params['id'];
     this.projectsService.getProject(this.id)
-    .valueChanges().subscribe((project)=>{
-                    this.project = project;
-                    console.log(project)
-                });
+      .valueChanges().subscribe((project) => {
+        this.project = project;
+        console.log(project)
+      });
   }
 }
