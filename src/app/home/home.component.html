@@ -3,16 +3,16 @@
   <div class="row d-flex justify-content-between">
     <ng-container *ngFor="let project of projects">
       <div class="card" style="width: 18rem; margin: 15px">
-        <img class="card-img-top" src="../assets/images/gloria.png" alt="Card image cap">
+        <img class="card-img-top" src="../assets/images/proyecto.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Gloria</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h5 class="card-title">{{project.cliente}}</h5>
+          <p class="card-text">{{project.nombre}}</p>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">{{project.inicio}}</li>
         </ul>
         <div class="card-body">
-          <a routerLink="/projects">Ver más</a>
+          <a routerLink="/projects/{{project.id}}">Ver más</a>
         </div>
       </div>
     </ng-container>

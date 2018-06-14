@@ -7,10 +7,10 @@ import { ProjectsService } from '../services/projects.service';
 })
 export class HomeComponent {
   projects = null;
-  /*constructor(private projectsService:ProjectsService) {
+  constructor(private projectsService:ProjectsService) {
     projectsService.getProjects()
-     .valueChanges().subscribe(lugares =>{
-       // this.projects = projects;
+     .valueChanges().subscribe( projects =>{
+       this.projects = projects;
      })
-    }*/
+    }
 }

@@ -19,7 +19,7 @@ const appRoutes : Routes =[
   {path:'', component:LoginComponent},
   {path:'login', component:LoginComponent},
   {path:'home', component: HomeComponent},
-  {path:'projects', component: ProjectsComponent},
+  {path:'projects/:id', component: ProjectsComponent},
   {path:'projectRegister', component: ProjectRegisterComponent},
   {path:'registerMembers', component:RegisterMembersComponent},
     

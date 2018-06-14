@@ -1,36 +1,37 @@
 <div class="container text-center">
-  <h1>Proyecto Gloria</h1>
+  <h1>Proyecto {{project.cliente}}</h1>
+  <h5>{{project.nombre}}</h5>
   <hr>
   <div class="row">
     <div class="col text-left">
       <h5>Código:
-       <input type="text" class="form-control" placeholder="AAA000" disabled> 
+       <input type="text" class="form-control" placeholder="{{project.codigo}}" disabled> 
       </h5>
       <br>
       <h5> Objetivo:
-          <input type="text" class="form-control" placeholder="AAA000" disabled> 
+          <input type="text" class="form-control" placeholder="{{project.objetivo}}" disabled> 
       </h5>
       <br>
       <h5>Unidad :
-          <input type="text" class="form-control" placeholder="AAA000" disabled> 
+          <input type="text" class="form-control" placeholder="{{project.unidad}}" disabled> 
       </h5>
     </div>
     <div class="col text-left">
       <h5>Fecha de Inicio:
-          <input type="text" class="form-control" placeholder="AAA000" disabled> 
+          <input type="text" class="form-control" placeholder="{{project.inicio}}" disabled> 
       </h5>
       <br>
       <h5> Fecha de fin:
-          <input type="text" class="form-control" placeholder="AAA000" disabled> 
+          <input type="text" class="form-control" placeholder="{{project.fin}}" disabled> 
       </h5>
       <br>
       <h5>Ubicación:
-          <input type="text" class="form-control" placeholder="AAA000" disabled> 
+          <input type="text" class="form-control" placeholder="{{project.ubicacion}}" disabled> 
       </h5>
     </div>
     <div class="col text-left">
-      <h5>Arquitectura:
-          <input type="text" class="form-control" placeholder="AAA000" disabled> 
+      <h5>Linea de servicio:
+          <input type="text" class="form-control" placeholder="{{project.servicio}}" disabled> 
       </h5>
       <br>
       <h5> Documentos:
