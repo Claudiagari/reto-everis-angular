@@ -3,40 +3,39 @@
   <hr>
   <div class="row text-left ">
     <div class="col-xs-12 offset-md-3 col-md-6 breadcrumb">
-       
-            <label for="">Nombre de Cliente</label>
-            <input type="text" class="form-control" [(ngModel)]="project.cliente" >
-            <br>
-            <label for="">Nombre de Proyecto</label>
-            <input type="text" class="form-control"  [(ngModel)]="project.nombre">
-            <br>
-            <label for="">Código de Proyecto</label>
-            <input type="text" class="form-control"  [(ngModel)]="project.codigo" >
-            <br>
-            <label for="">Lider de Proyecto</label>
-            <input type="text" class="form-control" [(ngModel)]="project.lider">
-            <br>
-            <label for="">Objetivo</label>
-            <textarea name="" id="" cols="30" rows="1" class="form-control" [(ngModel)]="project.objetivo" ></textarea>
-            <br>
-            <label for="">Unidad</label>
-            <input type="text" class="form-control" [(ngModel)]="project.unidad" >
-            <br>
-            <label for="">Linea de Servicio</label>
-            <input type="text" class="form-control" [(ngModel)]="project.servicio">
-            <br>
-            <label for="">Fecha Inicio</label>
-            <input type="date" class="form-control" [(ngModel)]="project.inicio" >
-            <br>
-            <label for="">Fecha Fin</label>
-            <input type="date" class="form-control" [(ngModel)]="project.fin">
-            <br>
-            <label for="">Ubicación</label>
-            <input type="text" class="form-control margin"  [(ngModel)]="project.ubicacion">
-            <hr>
-            <a  class="btn btn-primary" (click)="saveProject()">Enviar</a>
-            <a  class="btn btn-default" routerLink="/home">Cancelar</a>
-          
-    </div>
+
+      <label for="">Nombre de Cliente</label>
+      <input type="text" class="form-control" [(ngModel)]="project.cliente">
+      <br>
+      <label for="">Nombre de Proyecto</label>
+      <input type="text" class="form-control" [(ngModel)]="project.nombre">
+      <br>
+      <label for="">Código de Proyecto</label>
+      <input type="text" class="form-control" [(ngModel)]="project.codigo">
+      <br>
+      <label for="">Lider de Proyecto</label>
+      <input type="text" class="form-control " [(ngModel)]="project.lider">
+      <br>
+    <label for="">Objetivo</label>
+    <textarea name="" id="" cols="30" rows="1" class="form-control" [(ngModel)]="project.objetivo"></textarea>
+    <br>
+    <label for="">Unidad</label>
+    <input type="text" class="form-control" [(ngModel)]="project.unidad">
+    <br>
+    <label for="">Linea de Servicio</label>
+    <input type="text" class="form-control" [(ngModel)]="project.servicio">
+    <br>
+    <label for="">Fecha Inicio</label>
+    <input type="date" class="form-control" [(ngModel)]="project.inicio">
+    <br>
+    <label for="">Fecha Fin</label>
+    <input type="date" class="form-control" [(ngModel)]="project.fin">
+    <br>
+    <label for="">Ubicación</label>
+    <input type="text" class="form-control margin" [(ngModel)]="project.ubicacion">
+    <hr>
+    <a class="btn btn-primary" (click)="saveProject()">Enviar</a>
+    <a class="btn btn-default" routerLink="/home">Cancelar</a>
   </div>
+</div>
 </div>

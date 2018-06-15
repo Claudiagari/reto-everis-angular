@@ -1,6 +1,10 @@
 <div class="container text-center">
   <h1>Mis Proyectos</h1>
-  <div class="row d-flex justify-content-between">
+  <div class="row d-flex justify-content-around">
+  <a class="btn btn-secondary" routerLink="/projectRegister/new">Nuevo Proyecto</a> 
+  <a class="btn btn-secondary" routerLink="/registerMembers">Nuevo Colaborador</a> 
+</div>
+  <div class="row d-flex justify-content-center">
     <ng-container *ngFor="let project of projects">
       <div class="card" style="width: 18rem; margin: 15px">
         <img class="card-img-top" src="../assets/images/proyecto.jpg" alt="Card image cap">

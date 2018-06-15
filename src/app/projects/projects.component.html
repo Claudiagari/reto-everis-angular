@@ -40,49 +40,33 @@
       <br>
       <h5>
         <br>
-        <a class="btn btn-secondary" routerLink="">Editar</a>
+        <a class="btn btn-secondary" routerLink="/projectRegister/{{project.id}}">Editar</a>
       </h5>
     </div>
   </div>
   <hr>
   <h2>Organigrama</h2>
+  <label for="">Selecionar miembros del proyecto</label>
+  <div class="input-group margin">
+    <select class="custom-select" [(ngModel)]="optionSelection" id="inputGroupSelect04">
+      <option value="0" selected>Miembros</option>
+      <ng-container *ngFor="let member of members">
+        <option value="{{member.nombre}} {{member.apellido}}">{{member.email}}</option>
+      </ng-container>
+    </select>
+    <button class="btn btn-outline-secondary" (click)="addMemberProject()" type="button">Agregar</button>
+  </div>
   <div class="row">
     <div class="offset-md-5 col-md-2">
-      <span>Maria Rojas</span>
-      <br>
+      <h5>{{project.lider}}</h5>
       <span>Lider</span>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-2">
-      <span>Maria Rojas</span>
+  <div class="row ">
+    <div *ngFor="let memberIn of membersProject" class="col-md-2">
+      <span >{{memberIn}}  </span>
       <br>
-      <span>Miembro-1</span>
-    </div>
-    <div class="col-md-2">
-      <span>Maria Rojas</span>
-      <br>
-      <span>Miembro-2</span>
-    </div>
-    <div class="col-md-2">
-      <span>Maria Rojas</span>
-      <br>
-      <span>Miembro-3</span>
-    </div>
-    <div class="col-md-2">
-      <span>Maria Rojas</span>
-      <br>
-      <span>Miembro-4</span>
-    </div>
-    <div class="col-md-2">
-      <span>Maria Rojas</span>
-      <br>
-      <span>Miembro-5</span>
-    </div>
-    <div class="col-md-2">
-      <span>Maria Rojas</span>
-      <br>
-      <span>Miembro-6</span>
+      <span>Miembro</span>
     </div>
   </div>
 </div>

@@ -8,10 +8,10 @@ export class MembersService{
   constructor(private afDB:AngularFireDatabase){
   }
     public getMembers(){
-      return this.afDB.list('/projects/members')
+      return this.afDB.list('members/')
     }
     public saveMember(member){
       console.log(member)
-      this.afDB.database.ref('projects/'+member.id).set(member)
+      this.afDB.database.ref('members/'+member.id).set(member)
     }
   }
