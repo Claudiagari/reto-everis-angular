@@ -1,11 +1,12 @@
 import { Injectable } from "@angular/core";
 import { AngularFireDatabase } from "angularfire2/database";
+import { Router } from "@angular/router";
 //import { Http } from '@angular/http';
 
 @Injectable()
 export class ProjectsService {
   projects: any = {}
-  constructor(private afDB: AngularFireDatabase /*, private http: Http*/) {
+  constructor(private afDB: AngularFireDatabase ,private router:Router) {
   }
   public getProjects() {
     return this.afDB.list('projects/')
@@ -16,9 +17,11 @@ export class ProjectsService {
   public saveProject(project) {
     console.log(project)
     this.afDB.database.ref('projects/' + project.id).set(project)
+    this.router.navigate(['home'])
   }
-  public editProject(project){
-    this.afDB.database.ref('projects/'+project.id).set(project)
+  public editProject(project ){
+    this.afDB.database.ref('projects/'+project.id).set(project);
+    this.router.navigate(['project/'+project.id])
   }
   public updateProject(id){
     return this.afDB.object('projects/'+id);

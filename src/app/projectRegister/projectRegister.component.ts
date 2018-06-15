@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ProjectsService } from '../services/projects.service';
 import { MembersService } from '../services/members.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-projectRegister',
@@ -12,7 +12,7 @@ export class ProjectRegisterComponent {
   member: any = {}
   members = null
   id: any = null
-  constructor(private route: ActivatedRoute, private projectsService: ProjectsService, private memberService: MembersService) {
+  constructor(private route: ActivatedRoute, private projectsService: ProjectsService, private memberService: MembersService, private router:Router) {
     this.id = this.route.snapshot.params['id'];
     console.log(this.id)
     this.memberService.getMembers()
