@@ -1,27 +1,14 @@
 # RetoEveris
+Aplicación web que tendrá como objetivo principal mantener informado a los colaboradores sobre los proyectos.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+![reto-everis](https://user-images.githubusercontent.com/32285734/41493523-af88ae64-70cd-11e8-8513-addb277e7b4f.png)
 
-## Development server
+## Herramientas
+ * Angular 
+ * Firebase
+ * Javascript
+ * Bootstrap
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Autor
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- **Claudia Garibotto** - [@claudiagari](https://github.com/claudiagari)
